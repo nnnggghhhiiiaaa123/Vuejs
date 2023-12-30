@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px
+}
+img {
+    max-width: 100%;
+}
+.product {
+    max-width: 700px;
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+}
+.product .product-image {
+    flex-basis: 40%;
+    max-width: 40%;
+    padding-right: 30px;
+}
+.product .product-content {
+    flex-basis: 60%
+}
+.product-image .image {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.product-image .image img {
+    display: block;
+}

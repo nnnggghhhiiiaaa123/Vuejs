@@ -1,22 +1,58 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vuejs</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.global.js"></script>
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
 <body>
-    <header><h1>Header</h1></header>
+    <header>
+        <h1>Header</h1>
+    </header>
     <div class="list-blog"></div>
     <p>Loraem Loraem Loraem Loraem Loraem
         Loraem Loraem Loraem Loraem Loraem
         Loraem Loraem Loraem Loraem Loraem
     </p>
     <div id="app">
-        <h1>{{ title }}</h1>
-        <h2>{{ say('World')}}</h2>
+        <div class="cart">Giỏ hàng (1)</div>
+        <div class="product">
+            <div class="product-image">
+
+            </div>
+            <div class="product-content">
+                <h3 class="title">
+                    <a v-bind:href="url" v-bind:target="target">{{ title }}</a>
+                </h3>
+                <p class="brand">Brand: No brand</p>
+                <div class="wrapper-price">
+                    <div class="final-price">{{ formatPrice() }}</div>
+                    <div class="origin-price">20.000</div>
+                    <div class="sale-price">-50%</div>
+                </div>
+                <div class="wrapper-color">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="description">
+            <h2>Chất liệu bền chặt&nbsp;</h2>
+
+            <p>M&ocir; tả: &Aacute;o thun cổ tr&ograve;n thể thao Hiye chuy&ecirc;n được may từ chất
+                liệu nilon tho&aacute;ng m&aacute;t v&agrave; tho&aacute;t mồ h&ocirc;i tốt, kết hợp th&ecirc;m
+                sợi thun tạo độ co gi
+
+            </p>
+        </div>
     </div>
-    <footer><h1>Footer</h1></footer>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
 </body>
 <script src="main.js"></script>
+
 </html>
